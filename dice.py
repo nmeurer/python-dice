@@ -1,5 +1,11 @@
+#                    __  __                    ___        
+#   	  ___  __ __/ /_/ /  ___  ___  _______/ (_)______ 
+#  	 / _ \/ // / __/ _ \/ _ \/ _ \/___/ _  / / __/ -_)
+# 	/ .__/\_, /\__/_//_/\___/_//_/    \_,_/_/\__/\__/ 
+#      /_/   /___/    http://github.com/nmeurer/                               
+
 import random
-l = "l"
+l = "l" #quick&dirty conversion to string
 q = "q"
 def listDices():
 	print("""Welcome to the dice simulator!
@@ -24,11 +30,11 @@ def rollDice(min, max): #define dice roll
 listDices()
 
 while 1==1:
-	answer = input("Dice number: ")
+	answer = input("Dice number: ") #get user input
 
-	if answer == 1:
+	if answer == 1: #parse user input
 		print("Rolling a normal dice...")
-		print(rollDice(1,6))
+		print(rollDice(1,6)) #roll the dice
 	elif answer == 2:
 		print("Rolling a tetrahedron...")
 		print(rollDice(1,4))
